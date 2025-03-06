@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="form.css">
+</head>
+<body>
+    <div>
+        <div>     
+        <h1>User Form</h1>
+        <form>
+            <label>Name:</label>
+            <input type="text" name= "name" id = "name"/><br/>
+            <label>Age:</label>
+            <select id = "age" name="age"> 
+                <option value = "18-99">18-99</option>
+                <option value = "13-18">13-18</option>
+            </select> <br/>
+            <label>Gender</label>
+            <input type="radio" name="gender" id="female" value="female" checked>Female
+            <input type="radio" name="gender" id="male" value="male">Male <br/>
+            <div id = "hobbies-grid">
+                <label>Hobbies</label>
+                <input type="text" id = "hobbies" name = "hobbies"/> 
+                <button type="button" onclick="addHobbyTextBox()">+</button>
+                <button type="button" onclick="removeHobbyTextBox()">-</button>
+                
+            </div>
+            
+
+            <button type="button" onclick="addUser()">Add</button>
+            <button type="reset">Reset</button>
+
+        </form>
+</div>
+<div>
+    <h1>User Table</h1>
+    <table id = "user-table">
+        <thead> 
+        <tr>
+        <th>Name </th>
+        <th>Age</th>
+        <th>Gender</th>
+        <th>Hobbies</th>
+        <th>Action</th>
+    </tr>
+</thead>
+<tbody>
+
+</tbody>
+</table>
+</div>
+</div>
+<script src = "form.js"></script>
+</body>
+</html>
+
